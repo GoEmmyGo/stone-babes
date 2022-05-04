@@ -1,0 +1,15 @@
+main {
+    font-family: 'Chicle', cursive;
+}
+
+
+/* Here I am setting up an effect that will execute when I hover over my links */
+.nav-bar {
+    font-size: 20px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.nav-bar:hover a {
+    transform: scale(1.5);
+    transition: all ease 500ms;
+}
