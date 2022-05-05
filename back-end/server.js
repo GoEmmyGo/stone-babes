@@ -13,16 +13,26 @@ const app = express()
 //here I am naming my port for reference 
 const port = 4400
 
-//here I am using express to use utilize cors an
+//here I am using express to use utilize cors
 app.use(cors())
 app.use(express.json())
 
-//here I have an object with all of my request functions that will need information either from my sends database or projects database
-const {getSends, deleteSend, addSend, editSend} = require('./sends-db.json')
-const {getProjects, deleteProject, addProject, editProject} = require('./projects-db.json')
+// //here I have an object with all of my request functions that will need information either from my sends database or projects database
+const {getSends, deleteSend, addSend} = require('./controllers/cont-sends')
+const {getProjects, deleteProject, addProject} = require('./controllers/cont-projects')
 
-//now I will list out my requests that will use
-app.get(`/api`)
+// const {getSends, deleteSend, addSend, editSend} = require('./sends-db.json')
+// const {getProjects, deleteProject, addProject, editProject} = require('./projects-db.json')
+
+// // now I will list out my requests that will use
+app.get(`/api/projects`, getProjects)
+app.delete(`/api/projects/:id`, deleteProject)
+app.post(`/api/projects`, addProject)
+// app.put(`/api/projects/:id`, editProject)
+app.get(`/api/sends`, getSends)
+app.delete(`/api/sends/:id`, deleteSend)
+app.post(`/api/sends`, addSend)
+// app.put(`/api/sends/:id`, editSend)
 
 
 //here am using express to listen to my server port and letting myself know if things are working

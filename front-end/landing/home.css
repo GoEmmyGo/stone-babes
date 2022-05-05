@@ -9,7 +9,7 @@ main {
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
-.nav-bar:hover a {
+.nav-bar a:hover {
     transform: scale(1.5);
     transition: all ease 500ms;
 }

@@ -1,9 +1,27 @@
 {
+  "name": "foundations-capstone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "back-end/server.js",
+  "proxy":"http://localhost:4400",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoEmmyGo/foundations-capstone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GoEmmyGo/foundations-capstone/issues"
+  },
+  "homepage": "https://github.com/GoEmmyGo/foundations-capstone#readme",
   "dependencies": {
     "axios": "^0.27.2",
     "cors": "^2.8.5",
-    "express": "^4.18.1",
-    "init": "^0.1.2",
-    "nodemon": "^2.0.16"
+    "express": "^4.18.1"
   }
 }

@@ -1,4 +1,5 @@
-let projects = require('./projects-db.json')
+// let projects = require('../back-end/db/projects-db.json')
+let projects = []
 
 module.exports = {
     getProjects: (req, res) => {
@@ -8,6 +9,7 @@ module.exports = {
         let index = projects.findIndex(elem => elem.id === +req.params.id)
         projects.splice(index, 1)
         res.status(200).send(projects)
+        //this will go into the database and look through all of the id's to compare/match and then remove the correct one
     },
     addProject: (req, res) => {
         let { videoURL, title, grade, location, area, notes } = req.body
@@ -24,12 +26,12 @@ module.exports = {
         globalId++
         res.status(200).send(projects)
     },
-    editProject: (req, res) => {
-        let { id } = req.params
-        let { type } = req.body
-        let index = projects.findIndex(elem => +elem.id === +id)
+    // editProject: (req, res) => {
+    //     let { id } = req.params
+    //     let { type } = req.body
+    //     let index = projects.findIndex(elem => +elem.id === +id)
 
-        //need to finish writing out this functionality
+    //     //need to finish writing out this functionality
 
-    }
+    // }
 }
