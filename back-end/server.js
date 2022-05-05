@@ -18,8 +18,8 @@ app.use(cors())
 app.use(express.json())
 
 // //here I have an object with all of my request functions that will need information either from my sends database or projects database
-const {getSends, deleteSend, addSend} = require('./controllers/cont-sends')
-const {getProjects, deleteProject, addProject} = require('./controllers/cont-projects')
+const {getSends, deleteSend, addSend} = require('./controllers/cont-sends.js')
+const {getProjects, deleteProject, addProject} = require('./controllers/cont-projects.js')
 
 // const {getSends, deleteSend, addSend, editSend} = require('./sends-db.json')
 // const {getProjects, deleteProject, addProject, editProject} = require('./projects-db.json')

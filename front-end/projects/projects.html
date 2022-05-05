@@ -9,29 +9,58 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chicle&display=swap" rel="stylesheet">
     <!-- below is my css link for styling my page -->
-    <link rel="stylesheet" href="styles.css"
+    <link rel="stylesheet" href="./projects.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     <title>Stone Babes</title>
 </head>
 <body>
-    <header>stone babes</header>
+    <header>
+        <a href="../landing/home.html">stone babes</a>
+    </header>
     <nav class="nav-bar">
-        <a href="./home.html">HOME</a>
-        <a href="./about/about.html">ABOUT</a>
-        <a href="./sends/sends.html">SENDS</a>
-        <a href="./projects/projects.html">PROJECTS</a>
-        <a href="./home.html">LOGIN</a>
+        <!-- <a href="./home.html">HOME</a> -->
+        <a href="../about/about.html">ABOUT</a>
+        <a href="../sends/sends.html">SENDS</a>
+        <a href="../projects/projects.html">PROJECTS</a>
+        <!-- <a href="../landing/home.html">LOGIN</a> -->
     </nav>
 
     <form>
         <input
-            type='text'
+            type="url"
             id="videoURL"
             placeholder="youtube link"/>
+        <input
+            type="text"
+            id="title"
+            placeholder="name"/>
+        <input
+            type="text"
+            id="grade"
+            placeholder="grade"/>
+        <input
+            type="text"
+            id="location"
+            placeholder="location"/>
+        <input
+            type="text"
+            id="area"
+            placeholder="area"/>
+        <input
+            type="text"
+            id="notes"
+            placeholder="notes"/>
+        <button id="submit">ADD</button>
     </form>
-
-    <section id="projects-container"></section>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <footer>Stone Babes © 2022</footer>
     
+
+    <section id="projects-container">
+        
+    </section>
+
+    <footer>Stone Babes © 2022</footer>
+
+    <script src="/front-end/projects/projects.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </body>
 </html>
