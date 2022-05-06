@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "back-end/server.js",
-  "proxy":"http://localhost:4400",
+  "proxy": "http://localhost:4400",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -22,6 +22,7 @@
   "dependencies": {
     "axios": "^0.27.2",
     "cors": "^2.8.5",
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
   }
 }

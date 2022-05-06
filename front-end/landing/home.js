@@ -17,5 +17,5 @@ const projectsButton = document.querySelector('a[href="./projects/projects.html"
 
 //here I will have my functions for my landing page variables
 
-homeButton.addEventListener(`mouseover`, )
+// homeButton.addEventListener(`mouseover`, )
 

@@ -1,3 +1,41 @@
 main {
     font-family: 'Chicle', cursive;
 }
+
+title {
+    display: none;
+  }
+
+
+/* Here I am setting up an effect that will execute when I hover over my links */
+.nav-bar {
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items:center;
+	align-content:space-between;
+    padding-inline: 50px;
+}
+
+.nav-bar-elem:hover {
+    justify-content:space-around;
+    
+    display: block;
+    font-size: 20px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    transform: scale(1.5);
+    transition: all ease 500ms;
+}
+
+footer {
+    display: flexbox;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-end;
+	align-content: flex-end;
+}
