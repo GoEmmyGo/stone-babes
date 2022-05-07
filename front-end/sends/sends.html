@@ -8,13 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chicle&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     <!-- below is my css link for styling my page -->
-    <link rel="stylesheet" href="./sends.css"
+    <link rel="stylesheet" href="./sends.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     <title>Stone Babes</title>
 </head>
 <body>
-    <main>stone babes</main>
     <header>
         <a href="../landing/home.html">stone babes</a>
     </header>
@@ -26,7 +25,41 @@
         <!-- <a href="../landing/home.html">LOGIN</a> -->
     </nav>
 
+    <form id="form">
+        <input
+            type="url"
+            id="videoURL"
+            placeholder="youtube link"/><br>
+        <input
+            type="text"
+            id="title"
+            placeholder="name"/>
+        <input
+            type="text"
+            id="grade"
+            placeholder="grade"/><br>
+        <input
+            type="text"
+            id="location"
+            placeholder="location"/><br>
+        <input
+            type="text"
+            id="area"
+            placeholder="area"/><br>
+        <input
+            type="text"
+            id="notes"
+            placeholder="notes"/><br>
+        <button id="submit">ADD</button>
+    </form>
+    
+    <section id="sends-container"></section>
+
+    <button id="add-send">ADD</button>
+
+    <footer>Stone Babes © 2022</footer>
+
     <script src="/front-end/sends/sends.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>   
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </body>
 </html>

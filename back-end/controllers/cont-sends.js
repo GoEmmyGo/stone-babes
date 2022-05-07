@@ -1,5 +1,5 @@
-// let sends = require('../back-end/db/sends-db.json')
-let sends = []
+let sends = require('../db/sends-db.json')
+// let sends = []
 
 module.exports = {
     getSends: (req, res) => {

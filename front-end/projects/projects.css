@@ -10,9 +10,9 @@ form {
     display: none;
 }
 
-/* .add-project {
+button.add-project {
     display: block;
-} */
+}
 
 /* Here I am setting up an effect that will execute when I hover over my links */
 .nav-bar {

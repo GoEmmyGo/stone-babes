@@ -5,7 +5,14 @@ main {
 title {
     display: none;
   }
+/* here I am toggling the input form until the add button is clicked */
+form {
+    display: none;
+}
 
+button.add-project {
+    display: block;
+}
 
 /* Here I am setting up an effect that will execute when I hover over my links */
 .nav-bar {

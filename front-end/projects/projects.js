@@ -1,9 +1,10 @@
 //Here I am setting some variables up for reference later
 
-//these variable will search for an element with the invoked id or tag in my html document
+//these variables will search for an element with the invoked id or tag in my html document
 const projectsContainer = document.querySelector('#projects-container')
 const form = document.querySelector('#form')
-const toggleFormButton = document.querySelector('#add-project')
+const addButton = document.querySelector('#add-project')
+const formAddButton = document.querySelector('#submit')
 //here I have my baseURL that will serve as my transport pathway for all of my requests below
 const baseURL = `http://localhost:4400/api/projects`
 //I'm creating a callback function for when I need to have my requests callback the projects objects as well as an error function I can use below to catch any cases that aren't met
@@ -24,15 +25,26 @@ const toggleForm = () => {
     } else {
         form.style.display = "block"
     }
+    console.log('toggle form working')
 }
-//trying to get the initial add button to toggle
-// const toggleAdd = () => {
-//     if (toggleFormButton.style.display === "block") {
-//        toggleFormButton.style.display = "none"
-//    } else {
-//        toggleFormButton.style.display = "block"
-//    }
-// }
+//trying to get the initial add button to toggle, it worked!!!!
+const hideAdd = () => {
+    if (addButton.style.display === "none") {
+       addButton.style.display = "block"
+   } else {
+    addButton.style.display = "none"
+}
+   console.log('hideAdd working')
+}
+
+const displayAdd = () => {
+    if (addButton.style.display === "block") {
+        addButton.style.display = "none"
+   } else {
+       addButton.style.display = "block"
+   }
+   console.log('displayAdd working')
+}
 
 
 const submitHandler = (e) => {
@@ -74,15 +86,21 @@ const addProjectBox = (project) => {
     `<iframe width="1046" height="588" src='${project.videoURL}' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div class="projectBox">
         <p class="title">${project.title}</p>
+        <br>
         <p class="grade">${project.grade}</p>   
         <p class="location">${project.location}</p>
+        <br>
         <p class="area">${project.area}</p> 
+        <br>
         <p class="notes">${project.notes}</p>
+        <br>
     <button id="edit-project" onclick="editProject(${project.id})">EDIT</button>
     </div>
     <button id="delete-project" onclick="deleteProject(${project.id})">REMOVE</button>`
 
     projectsContainer.appendChild(projectBox)
+
+    console.log('project box added')
 }
 
 const displayProjects = (arr) => {
@@ -90,18 +108,19 @@ const displayProjects = (arr) => {
     for (let i = 0; i < arr.length; i++) {
         addProjectBox(arr[i])
     }
+    console.log('projects displayed')
 }
-
-toggleFormButton.addEventListener('click', toggleForm)
-// toggleFormButton.addEventListener('submit', toggleAdd)
-form.addEventListener('submit', submitHandler)
-form.addEventListener('submit', toggleForm)
-// form.addEventListener('click', toggleAdd)
-
-
 
 const displayProjectBox = (arr) => {
     console.log(arr)
+    console.log('project array displayed')
 }
+
+addButton.addEventListener('click', toggleForm)
+addButton.addEventListener('click', hideAdd)
+formAddButton.addEventListener('click', toggleForm)
+formAddButton.addEventListener('click', submitHandler)
+formAddButton.addEventListener('click', displayAdd)
+formAddButton.addEventListener('submit', addProjectBox)
 
 getAllProjects()
