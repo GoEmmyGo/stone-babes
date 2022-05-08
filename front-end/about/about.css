@@ -1,5 +1,44 @@
-main {
-    font-family: 'Chicle', cursive;
+html {
+    width: 100%;
+    min-height: 100%;
+    background-image: url('../images/moon-sky-boulders.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body {
+     position: relative;
+     min-height: 100vh;
+}
+ 
+.icon {
+    font-family: 'Rubik Glitch', cursive;
+    /* color:  #f76cf7; */
+    color: aqua;
+    font-size: 500%;
+    box-sizing: 20%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    /* left: 0; */
+    padding-left: 3%;
+    padding-top: 1%;
+    padding-right: 3%;
+    margin-right: 3%;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap; 
+    text-decoration: none; 
+    padding-inline-end: 2%;  
+}
+
+br {
+    content: "";
+    display: block;
+    margin: 5%;
+    /* font-size: 1000%; */
 }
 
 title {
@@ -10,7 +49,7 @@ title {
 /* Here I am setting up an effect that will execute when I hover over my links */
 .nav-bar {
     display: inline-block;
-    font-size: 20px;
+    font-size: 200%;
     font-family: 'IBM Plex Sans', sans-serif;
     display: flex;
 	flex-direction: row;
@@ -18,24 +57,73 @@ title {
 	justify-content: flex-end;
 	align-items:center;
 	align-content:space-between;
-    padding-inline: 50px;
+    padding-inline: 2%;
 }
 
-.nav-bar-elem:hover {
+.nav-bar-elem {
+    margin-left: 5%;
+    margin-right: 2%;
+    margin-top: 2%;
+    color: white;
+}
+
+.nav-bar-elem:link, .nav-bar-elem:visited {
+    text-decoration: none;
+}
+
+.icon:link, .icon:visited {
+    text-decoration: none;
+}
+
+.nav-bar-elem:hover, .nav-bar-elem:active {
     justify-content:space-around;
-    
     display: block;
-    font-size: 20px;
     font-family: 'IBM Plex Sans', sans-serif;
-    transform: scale(1.5);
+    transform: scale(1.2);
     transition: all ease 500ms;
+    text-decoration: none;
+}
+
+.icon:hover, .icon:active {
+    justify-content:space-around;
+    display: block;
+    font-family: 'Rubik Glitch', cursive;
+    transform: scale(1.2);
+    transition: all ease 500ms;
+    text-decoration: none;
+}
+
+#about {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+    font-size: 150%;
+    /* box-sizing: 10%; */
+    display: flex;
+    position: fixed;
+    right: 0;
+    padding-left: 60%;
+    padding-top: 10%;
+    align-items: flex-end;
+    align-content: right;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap-reverse;
+    text-decoration: none; 
 }
 
 footer {
-    display: flexbox;
+    /* display: flexbox;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: flex-end;
-	align-content: flex-end;
+	align-content: flex-end; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    font-family: 'Chicle', cursive;
+    color: white;
+    font-size: 150%;
 }
