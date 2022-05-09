@@ -9,7 +9,7 @@ const formAddButton = document.querySelector('#submit')
 const baseURL = `http://localhost:4400/api/projects`
 //I'm creating a callback function for when I need to have my requests callback the projects objects as well as an error function I can use below to catch any cases that aren't met
 const projectsCallback = ({ data: projects }) => displayProjects(projects)
-const errCallback = (err) => console.log(err.res.data)
+const errCallback = (err) => console.log(err)
 //here are my endpoints for my backend
 const getAllProjects = () => axios.get(baseURL).then(projectsCallback).catch(errCallback)
 const addProject = body => axios.post(baseURL, body).then(projectsCallback).catch(errCallback)
@@ -20,12 +20,12 @@ const deleteProject = id => axios.delete(`${baseURL}/${id}`).then(projectsCallba
 
 //toggles the form for adding a project
 const toggleForm = () => {
-     if (form.style.display === "block") {
+     if (form.style.display === "flex") {
         form.style.display = "none"
     } else {
-        form.style.display = "block"
+        form.style.display = "flex"
     }
-    console.log('toggle form working')
+    console.log('toggle form working', form)
 }
 //trying to get the initial add button to toggle, it worked!!!!
 const hideAdd = () => {
@@ -79,6 +79,7 @@ const submitHandler = (e) => {
 }
 
 const addProjectBox = (project) => {
+    console.log(form, projectsContainer)
     const projectBox = document.createElement('div')
     projectBox.classList.add('project-box')
 
@@ -86,14 +87,10 @@ const addProjectBox = (project) => {
     `<iframe width="400" height="300" src='${project.videoURL}' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div class="projectBox">
         <p class="title">${project.title}</p>
-        <br>
         <p class="grade">${project.grade}</p>   
         <p class="location">${project.location}</p>
-        <br>
         <p class="area">${project.area}</p> 
-        <br>
         <p class="notes">${project.notes}</p>
-        <br>
     <button id="edit-project" onclick="editProject(${project.id})">EDIT</button>
     </div>
     <button id="delete-project" onclick="deleteProject(${project.id})">REMOVE</button>`

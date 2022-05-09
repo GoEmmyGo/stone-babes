@@ -21,8 +21,9 @@ title {
     display: none;
   }
 /* here I am toggling the input form until the add button is clicked */
-form {
+#form {
     display: none;
+    flex-direction: column;
 }
 
 button.add-project {
@@ -147,30 +148,25 @@ button.add-project {
     }
 }
 
-form {
+.content-grid {
 	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
+	flex-direction: row-reverse;
+	/* flex-wrap: wrap; */
 	justify-content: space-evenly;
-	align-items: flex-end;
-	align-content: flex-end;
-    position: absolute;
-    top: 20%;
-    right: 3%;
+	align-items: center;
+    padding-top: 200px;
 }
 
 
 
 #projects-container {
     display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
-	align-items: flex-start;
-	align-content: center;
-    left: 3%
-
-
+	justify-content: flex-start;
+	align-items: center;
+    width: 100vw;
+    height: 75vh;
 }
 
 footer {
@@ -191,3 +187,6 @@ footer {
     font-size: 150%;
 }
 
+.project-box {
+    margin: 3%;
+}
