@@ -76,6 +76,8 @@ const submitHandler = (e) => {
     location.value = ''
     area.value = ''
     notes.value = ''
+
+    
 }
 
 const addProjectBox = (project) => {

@@ -6,6 +6,7 @@ html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 
 main {
@@ -62,7 +63,7 @@ button.add-project {
     justify-content: flex-start;
     flex-wrap: wrap; 
     text-decoration: none; 
-    padding-inline-end: 2%;  
+    padding-inline-end: 2%; 
 }
 
 #icon-wrap {
@@ -73,17 +74,23 @@ button.add-project {
 }
 
 /* Here I am setting up an effect that will execute when I hover over my links */
+
 .nav-bar {
     display: inline-block;
     font-size: 200%;
     font-family: 'IBM Plex Sans', sans-serif;
     display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: flex-end;
-	align-items:center;
-	align-content:space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: space-between;
     padding-inline: 2%;
+    width: 95vw;
+    position: fixed;
+    overflow-x:hidden;
+    overflow-y: hidden;
+
 }
 
 .nav-bar-elem {
@@ -193,8 +200,8 @@ p {
     margin: 0;
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 200%;
-    font-variant: small-caps;
     width: 400;
+    overflow-x: hidden;
 }
 
 .title {
@@ -202,7 +209,8 @@ p {
     align-content:space-between;
     align-items: center;
     justify-content: space-between;
-    font-family:'Chicle', cursive;
+    /* font-family:'Chicle', cursive; */
+    font-family: 'Bangers', cursive;
     font-size: 400%;
     margin: none;
     font-variant: normal;
@@ -218,25 +226,23 @@ p {
     align-items: flex-start;
     width: 100vw;
     height: 75vh;
+    overflow-x: hidden;
 }
 
 #form {
     display: none;
     flex-direction: column;
     position: fixed;
-    right: 0;
+    right: 20%;
+    bottom: 12.5%;
     border-style: solid;
     border-width: 2px;
-    border-color: whitesmoke;
-    /* padding-top: 250px; */
-    padding-bottom: 900px;
-    padding-left: 200px;
-    padding-right: 100px;
-    scroll-padding-bottom: 200px;
-    background-color: whitesmoke;
-    position: sticky;
-    align-content: flex-start;
-    margin-top: 70px;
+    border-color: black;
+    padding-top:125px;
+    padding-bottom:125px;
+    padding-left:150px;
+    padding-right:150px;
+    text-transform: uppercase;
 }
 
 footer {
@@ -255,6 +261,7 @@ footer {
     font-family: 'Chicle', cursive;
     color: black;
     font-size: 150%;
+    overflow-x: hidden;
 }
 
 .project-box {
@@ -262,6 +269,7 @@ footer {
     width: 400px;
     display: flex;
     flex-direction: column;
+    overflow-x:hidden
 }
 
 .content-grid {
@@ -272,12 +280,51 @@ footer {
 	align-items: center;
     padding-top: 200px;
     width: 100vw;
+    overflow-x: hidden;
+    text-transform: uppercase;
 }
 
 iframe {
     border-radius: 0.4em; 
     overflow: hidden;
 }
+
+input {
+    padding-top: 10px;
+}
+
+#page-headline {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color:black;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap; 
+    text-decoration: none; 
+    margin-top: 200px;
+    padding-left: 2%;
+    font-size: 2000%;
+    position: fixed;
+
+}
+
+/* #background {
+    background-color: whitesmoke;
+    width: 100vw;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    z-index: 100;
+} */
+
+/* .header-box {
+    position: fixed;
+    background-color: whitesmoke;
+} */
 
 /* display: none;
 flex-direction: column;
