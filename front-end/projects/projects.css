@@ -21,10 +21,23 @@ title {
     display: none;
   }
 /* here I am toggling the input form until the add button is clicked */
-#form {
+/* #form {
     display: none;
     flex-direction: column;
-}
+    position: fixed;
+    right: 0;
+    border-style: solid;
+    border-width: 2px;
+    border-color: whitesmoke;
+    padding-top: 200px;
+    padding-bottom: 900px;
+    padding-left: 200px;
+    padding-right: 100px;
+    scroll-padding-bottom: 200px;
+    background-color: whitesmoke;
+    position: sticky;
+    align-content: flex-start;
+} */
 
 button.add-project {
     display: block;
@@ -110,9 +123,9 @@ button.add-project {
 
 #add-project {
     display:inline-block;
-    padding:0.35em 1.2em;
+    /* padding:0.35em 1.2em; */
     border:0.1em solid black;
-    margin:0 0.3em 0.3em 0;
+    /* margin:0 0.3em 0.3em 0; */
     border-radius:0.12em;
     box-sizing: border-box;
     text-decoration:none;
@@ -129,6 +142,8 @@ button.add-project {
 
 #title {
     width: 32%;
+    padding: none;
+    margin: none;
 }
 
 #grade {
@@ -148,25 +163,80 @@ button.add-project {
     }
 }
 
-.content-grid {
-	display: flex;
-	flex-direction: row-reverse;
-	/* flex-wrap: wrap; */
-	justify-content: space-evenly;
-	align-items: center;
-    padding-top: 200px;
+#delete-project {
+    border:0.1em solid black;
+    margin:0 0 0 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 30%;
+    color: whitesmoke;
+    background-color:black;
+    text-align: flex-end;
+    transition: all 0.2s;
+    height: 10%;
+}
+
+#delete-project:hover {
+    border:0.1em solid black;
+    color: black;
+    background-color:whitesmoke;
+    justify-content: flex-end;
+	align-items: flex-end;
+	align-content: flex-end;
+    flex-wrap: nowrap;
+    display: inline-block;
+}
+
+p {
+    margin: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 200%;
+    font-variant: small-caps;
+    width: 400;
+}
+
+.title {
+    display:flex;
+    align-content:space-between;
+    align-items: center;
+    justify-content: space-between;
+    font-family:'Chicle', cursive;
+    font-size: 400%;
+    margin: none;
+    font-variant: normal;
 }
 
 
 
 #projects-container {
     display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 100vw;
     height: 75vh;
+}
+
+#form {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    border-style: solid;
+    border-width: 2px;
+    border-color: whitesmoke;
+    /* padding-top: 250px; */
+    padding-bottom: 900px;
+    padding-left: 200px;
+    padding-right: 100px;
+    scroll-padding-bottom: 200px;
+    background-color: whitesmoke;
+    position: sticky;
+    align-content: flex-start;
+    margin-top: 70px;
 }
 
 footer {
@@ -189,4 +259,36 @@ footer {
 
 .project-box {
     margin: 3%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
 }
+
+.content-grid {
+	display: flex;
+	flex-direction: row-reverse;
+	/* flex-wrap: wrap; */
+	justify-content: space-evenly;
+	align-items: center;
+    padding-top: 200px;
+    width: 100vw;
+}
+
+iframe {
+    border-radius: 0.4em; 
+    overflow: hidden;
+}
+
+/* display: none;
+flex-direction: column;
+position: fixed;
+right: 20%;
+bottom: 12.5%;
+border-style: solid;
+border-width: 2px;
+border-color: black;
+padding-top:125px;
+padding-bottom:125px;
+padding-left:150px;
+padding-right:150px;
+background-color: white; */

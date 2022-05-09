@@ -84,21 +84,20 @@ const addProjectBox = (project) => {
     projectBox.classList.add('project-box')
 
     projectBox.innerHTML = 
-    `<iframe width="400" height="300" src='${project.videoURL}' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    `<iframe width="400" height="300" src='${project.videoURL}' title="YouTube video player" frameborder="0" allow="accelerometer; allow="autoplay"; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div class="projectBox">
-        <p class="title">${project.title}</p>
-        <p class="grade">${project.grade}</p>   
+        <p class="title">${project.title} ${project.grade} <button id="delete-project" onclick="deleteProject(${project.id})">X</button></p>
         <p class="location">${project.location}</p>
         <p class="area">${project.area}</p> 
         <p class="notes">${project.notes}</p>
-    <button id="edit-project" onclick="editProject(${project.id})">EDIT</button>
-    </div>
-    <button id="delete-project" onclick="deleteProject(${project.id})">REMOVE</button>`
+    </div>`
 
     projectsContainer.appendChild(projectBox)
 
     console.log('project box added')
 }
+
+{/* <button id="edit-project" onclick="editProject(${project.id})">EDIT</button> */}
 
 const displayProjects = (arr) => {
     projectsContainer.innerHTML = ``
