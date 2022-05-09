@@ -1,5 +1,20 @@
+html {
+    width: 100%;
+    min-height: 100%;
+    /* background-color: #f8f8ff; */
+    background-color: whitesmoke;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 main {
     font-family: 'Chicle', cursive;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
 }
 
 title {
@@ -14,10 +29,39 @@ button.add-project {
     display: block;
 }
 
+.icon {
+    font-family: 'Rubik Glitch', cursive;
+    /* color:  #f76cf7; */
+    color: black;
+    font-size: 500%;
+    box-sizing: 20%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    /* left: 0; */
+    padding-left: 3%;
+    padding-top: 1%;
+    padding-right: 3%;
+    margin-right: 3%;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap; 
+    text-decoration: none; 
+    padding-inline-end: 2%;  
+}
+
+#icon-wrap {
+    content: "";
+    display: block;
+    margin: 0%;
+    /* font-size: 1000%; */
+}
+
 /* Here I am setting up an effect that will execute when I hover over my links */
 .nav-bar {
     display: inline-block;
-    font-size: 20px;
+    font-size: 200%;
     font-family: 'IBM Plex Sans', sans-serif;
     display: flex;
 	flex-direction: row;
@@ -25,24 +69,125 @@ button.add-project {
 	justify-content: flex-end;
 	align-items:center;
 	align-content:space-between;
-    padding-inline: 50px;
+    padding-inline: 2%;
 }
 
-.nav-bar-elem:hover {
+.nav-bar-elem {
+    margin-left: 5%;
+    margin-right: 2%;
+    margin-top: 2%;
+    color: black;
+}
+
+.nav-bar-elem:link, .nav-bar-elem:visited {
+    text-decoration: none;
+}
+
+.icon:link, .icon:visited {
+    text-decoration: none;
+}
+
+.nav-bar-elem:hover, .nav-bar-elem:active {
     justify-content:space-around;
-    
     display: block;
-    font-size: 20px;
     font-family: 'IBM Plex Sans', sans-serif;
     transform: scale(1.5);
     transition: all ease 500ms;
+    text-decoration: none;
+}
+
+.icon:hover, .icon:active {
+    justify-content:space-around;
+    display: block;
+    font-family: 'Rubik Glitch', cursive;
+    transform: scale(1.2);
+    transition: all ease 500ms;
+    text-decoration: none;
+}
+
+
+
+#add-project {
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid black;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 200%;
+    color: whitesmoke;
+    background-color:black;
+    text-align:center;
+    transition: all 0.2s;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+}
+
+#title {
+    width: 32%;
+}
+
+#grade {
+    width: 11.5%;
+}
+
+#add-project:hover {
+    border:0.1em solid black;
+    color: black;
+    background-color:whitesmoke;
+}
+
+@media all and (max-width:30em){
+    #add-project {
+        display:block;
+        margin:0.4em auto;
+    }
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: flex-end;
+	align-content: flex-end;
+    position: absolute;
+    top: 20%;
+    right: 3%;
+}
+
+
+
+#projects-container {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	align-content: center;
+    left: 3%
+
+
 }
 
 footer {
-    display: flexbox;
+    /* display: flexbox;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: flex-end;
 	align-content: flex-end;
+    color: black; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    font-family: 'Chicle', cursive;
+    color: black;
+    font-size: 150%;
 }
+

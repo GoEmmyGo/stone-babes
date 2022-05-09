@@ -34,10 +34,10 @@ body {
     padding-inline-end: 2%;  
 }
 
-br {
+#icon-wrap {
     content: "";
     display: block;
-    margin: 5%;
+    margin: 0%;
     /* font-size: 1000%; */
 }
 
@@ -79,7 +79,7 @@ title {
     justify-content:space-around;
     display: block;
     font-family: 'IBM Plex Sans', sans-serif;
-    transform: scale(1.2);
+    transform: scale(1.5);
     transition: all ease 500ms;
     text-decoration: none;
 }
@@ -96,28 +96,29 @@ title {
 #about {
     font-family: 'IBM Plex Sans', sans-serif;
     color: white;
-    font-size: 150%;
-    /* box-sizing: 10%; */
+    font-size: 170%;
+    box-sizing: 20%;
     display: flex;
-    position: fixed;
+    /* position: fixed; */
     right: 0;
-    padding-left: 60%;
+    padding-left: 50%;
     padding-top: 10%;
+    padding-right: 4%;
     align-items: flex-end;
     align-content: right;
     flex-direction: column;
     justify-content: flex-end;
+    text-align: justify;
     flex-wrap: wrap-reverse;
-    text-decoration: none; 
+    text-decoration: none;
+    /* text-shadow: 1px 1px 2px gray;  */
 }
 
-footer {
-    /* display: flexbox;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: flex-end;
-	align-content: flex-end; */
+#final-line {
+    font-size:200%;
+}
+
+/* footer {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -126,4 +127,13 @@ footer {
     font-family: 'Chicle', cursive;
     color: white;
     font-size: 150%;
-}
+} */
+
+ /* footer {
+    display: flexbox;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-end;
+	align-content: flex-end;
+  } */

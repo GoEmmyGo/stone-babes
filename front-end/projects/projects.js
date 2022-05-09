@@ -83,7 +83,7 @@ const addProjectBox = (project) => {
     projectBox.classList.add('project-box')
 
     projectBox.innerHTML = 
-    `<iframe width="1046" height="588" src='${project.videoURL}' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    `<iframe width="400" height="300" src='${project.videoURL}' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div class="projectBox">
         <p class="title">${project.title}</p>
         <br>

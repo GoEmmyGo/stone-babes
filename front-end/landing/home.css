@@ -1,6 +1,6 @@
 html {
-    width: 100%;
-    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     background-image: url('../images/moon-sky-boulders.jpg');
     background-size: cover;
     background-position: center;
@@ -17,25 +17,26 @@ main {
     font-family: 'Rubik Glitch', cursive;
     /* color:  #f76cf7; */
     color: aqua;
+    display: inline-block;
     font-size: 2000%;
-    box-sizing: 10%;
     display: flex;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    padding-left: 5%;
-    padding-bottom: 5%;
-    align-items: flex-end;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: wrap;    
+	flex-direction: column;
+	flex-wrap:nowrap;
+    position:relative;
+	justify-content: flex-start;
+	align-items:baseline;
+	align-content:flex-end;
+    padding-inline: 2%;
+    margin-left: 3%;
+    padding-bottom: 1%;
+    margin-top: 12%;
 }
 
 br {
     content: "";
     display: block;
     margin: none;
-    font-size: 1rem;
+    font-size: 1px;
 }
 
 title {
@@ -77,13 +78,7 @@ title {
     text-decoration: none;
 }
 
-footer {
-    /* display: flexbox;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: flex-end;
-	align-content: flex-end; */
+/* footer {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -92,4 +87,19 @@ footer {
     font-family: 'Chicle', cursive;
     color: white;
     font-size: 150%;
-}
+} */
+
+ /* main {
+     font-size: 2000%;
+    box-sizing: 10%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;     
+ }*/
