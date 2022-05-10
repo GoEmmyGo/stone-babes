@@ -10,28 +10,32 @@ html {
 body {
      position: relative;
      min-height: 100vh;
+     margin: 0;
 }
- 
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: fixed;
+    width: 100vw;
+}
+
 .icon {
     font-family: 'Rubik Glitch', cursive;
     /* color:  #f76cf7; */
     color: aqua;
     font-size: 500%;
     box-sizing: 20%;
-    display: flex;
-    position: fixed;
-    top: 0;
     /* left: 0; */
     padding-left: 3%;
     padding-top: 1%;
     padding-right: 3%;
     margin-right: 3%;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: wrap; 
     text-decoration: none; 
-    padding-inline-end: 2%;  
+    padding-inline-end: 2%; 
+    /* background-color: whitesmoke; */
 }
 
 #icon-wrap {
@@ -48,16 +52,18 @@ title {
 
 /* Here I am setting up an effect that will execute when I hover over my links */
 .nav-bar {
-    display: inline-block;
     font-size: 200%;
     font-family: 'IBM Plex Sans', sans-serif;
     display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: flex-end;
-	align-items:center;
-	align-content:space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: space-between;
     padding-inline: 2%;
+    width: 95vw;
+    overflow-x:hidden;
+    overflow-y: hidden;
 }
 
 .nav-bar-elem {
