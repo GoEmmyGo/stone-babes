@@ -28,6 +28,7 @@ header {
     width: 100vw;
     background-color: whitesmoke;
     height: 250px;
+    margin-top: 20px;
 }
 
 title {
@@ -219,7 +220,8 @@ p {
     display: none;
     flex-direction: column;
     justify-content: center;
-    /* position: fixed; */
+    position: absolute;
+    z-index: 2;
     right: 40px;
     bottom: 250px;
     /* border-style: solid; */

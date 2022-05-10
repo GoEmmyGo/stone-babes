@@ -20,6 +20,7 @@ header {
     align-items: flex-start;
     position: fixed;
     width: 100vw;
+    margin-top: 20px;
 }
 
 .icon {
@@ -122,8 +123,23 @@ title {
 
 #final-line {
     font-size:200%;
+    padding-top: 25px;
 }
 
+footer {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-family: 'Chicle', cursive;
+    color: white;
+    font-size: 150%;
+    align-items: flex-start;
+    margin-right: 110px;
+    margin-top: 475px;
+    margin-bottom: 50px;
+    /* position: fixed; */
+    justify-content: flex-end;
+}
 /* footer {
     position: absolute;
     bottom: 0;

@@ -22,28 +22,28 @@ const deleteSend = id => axios.delete(`${baseURL}/${id}`).then(sendsCallback).ca
 
 //toggles the form for adding a send
 const toggleForm = () => {
-     if (form.style.display === "block") {
-        form.style.display = "none"
+     if (form.style.visibility === "hidden") {
+        form.style.visibility = "visible"
     } else {
-        form.style.display = "block"
+        form.style.display = "hidden"
     }
     console.log('toggle form working')
 }
 //trying to get the initial add button to toggle, it worked!!!!
 const hideAdd = () => {
-    if (addButton.style.display === "none") {
-       addButton.style.display = "block"
+    if (addButton.style.visibility === "hidden") {
+       addButton.style.visibility = "visible"
    } else {
-    addButton.style.display = "none"
+    addButton.style.visibility = "hidden"
 }
    console.log('hideAdd working')
 }
 
 const displayAdd = () => {
-    if (addButton.style.display === "block") {
-        addButton.style.display = "none"
+    if (addButton.style.visibility === "visible") {
+        addButton.style.visibility = "hidden"
    } else {
-       addButton.style.display = "block"
+       addButton.style.visibility = "visible"
    }
    console.log('displayAdd working')
 }
