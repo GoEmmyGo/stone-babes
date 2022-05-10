@@ -20,7 +20,7 @@ header {
     align-items: flex-start;
     position: fixed;
     width: 100vw;
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .icon {
@@ -103,14 +103,14 @@ title {
 #about {
     font-family: 'IBM Plex Sans', sans-serif;
     color: white;
-    font-size: 170%;
+    font-size: 200%;
     box-sizing: 20%;
     display: flex;
     /* position: fixed; */
     right: 0;
     padding-left: 50%;
-    padding-top: 10%;
-    padding-right: 4%;
+    padding-top: 11%;
+    padding-right: 3%;
     align-items: flex-end;
     align-content: right;
     flex-direction: column;
@@ -122,8 +122,9 @@ title {
 }
 
 #final-line {
-    font-size:200%;
-    padding-top: 25px;
+    font-family: 'Chicle', cursive;
+    font-size:300%;
+    padding-top: 160px;
 }
 
 footer {
@@ -135,7 +136,7 @@ footer {
     font-size: 150%;
     align-items: flex-start;
     margin-right: 110px;
-    margin-top: 475px;
+    margin-top: 100px;
     margin-bottom: 50px;
     /* position: fixed; */
     justify-content: flex-end;

@@ -7,56 +7,58 @@
     <!-- below is my google fonts link for specialized fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chicle&display=swap" rel="stylesheet">
-    <!-- below is my css link for styling my page -->
-    <link rel="stylesheet" href="./sends.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Chicle&family=IBM+Plex+Sans&family=Rubik+Glitch&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     <title>Stone Babes</title>
+    <link rel="stylesheet" href="./sends.css">
 </head>
 <body>
-    <nav class="nav-bar">
-        <a class="nav-bar-elem" id="home-button" href="../landing/home.html">stone babes</a>
-        <a class="nav-bar-elem" href="../about/about.html">ABOUT</a>
-        <a class="nav-bar-elem" href="../sends/sends.html">SENDS</a>
-        <a class="nav-bar-elem" href="../projects/projects.html">PROJECTS</a>
-        <!-- <a href="../landing/home.html">LOGIN</a> -->
-    </nav>
-<header>
-    |PROJECTS|
-</header>
-    <form id="form">
-        <input
-            type="url"
-            id="videoURL"
-            placeholder="youtube link"/><br>
-        <input
-            type="text"
-            id="title"
-            placeholder="name"/>
-        <input
-            type="text"
-            id="grade"
-            placeholder="grade"/><br>
-        <input
-            type="text"
-            id="location"
-            placeholder="location"/><br>
-        <input
-            type="text"
-            id="area"
-            placeholder="area"/><br>
-        <input
-            type="text"
-            id="notes"
-            placeholder="notes"/><br>
-        <button type="button" id="submit">ADD</button>
-    </form>
-    
-    <section id="sends-container"></section>
+    <header>
+        <a class="icon" href="../landing/home.html">stone<br id="icon-wrap">babes</a>
+        <nav class="nav-bar">
+            <!-- <a href="./home.html">HOME</a> -->
+            <a class="nav-bar-elem" href="../about/about.html">ABOUT</a>
+            <a class="nav-bar-elem" href="../sends/sends.html">SENDS</a>
+            <a class="nav-bar-elem" href="../projects/projects.html">PROJECTS</a>
+            <!-- <a href="../landing/home.html">LOGIN</a> -->
+        </nav>
+    </header>
+    <section id="page-headline">|SENDS|</section>
+    <section class="content-grid">
+        <form id="form">
+            <input
+                type="url"
+                id="videoURL"
+                placeholder="youtube link"/>
+            <div id="same-line">
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="name"/>
+                <input
+                    type="text"
+                    id="grade"
+                    placeholder="grade"/>
+            </div>
+            <input
+                type="text"
+                id="location"
+                placeholder="location"/>
+            <input
+                type="text"
+                id="area"
+                placeholder="area"/>
+            <input
+                type="text"
+                id="notes"
+                placeholder="notes"/>
+            <button class="w3-btn w3-round" type="button" id="submit">ADD</button>
+        </form>
+        <div id="sends-container"></div>
+    </section>
+    <button class="w3-btn w3-round" type="button" id="add-send">ADD</button>
 
-    <button type="button" id="add-project">ADD</button>
-
-    <footer>Stone Babes © 2022</footer>
+    <footer>Stone Babes© 2022</footer>
 
     <script src="/front-end/sends/sends.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

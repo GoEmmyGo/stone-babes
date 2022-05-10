@@ -1,0 +1,564 @@
+html {
+    width: 100%;
+    min-height: 100%;
+    /* background-color: #f8f8ff; */
+    background-color: whitesmoke;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+main {
+    font-family: 'Chicle', cursive;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: fixed;
+    width: 100vw;
+    background-color: whitesmoke;
+    height: 250px;
+    padding-top: 20px;
+    z-index: 3;
+}
+
+title {
+    display: none;
+  }
+/* here I am toggling the input form until the add button is clicked */
+
+button.add-send {
+    display: block;
+}
+
+.icon {
+    font-family: 'Rubik Glitch', cursive;
+    /* color:  #f76cf7; */
+    color: black;
+    font-size: 500%;
+    box-sizing: 20%;
+    /* left: 0; */
+    padding-left: 3%;
+    padding-top: 1%;
+    padding-right: 3%;
+    margin-right: 3%;
+    text-decoration: none; 
+    padding-inline-end: 2%; 
+    /* background-color: whitesmoke; */
+}
+
+#icon-wrap {
+    content: "";
+    display: block;
+    margin: 0%;
+    /* font-size: 1000%; */
+}
+
+/* Here I am setting up an effect that will execute when I hover over my links */
+
+.nav-bar {
+    font-size: 200%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: space-between;
+    padding-inline: 2%;
+    width: 95vw;
+    overflow-x:hidden;
+    overflow-y: hidden;
+}
+
+.nav-bar-elem {
+    margin-left: 5%;
+    margin-right: 2%;
+    margin-top: 2%;
+    color: black;
+}
+
+.nav-bar-elem:link, .nav-bar-elem:visited {
+    text-decoration: none;
+}
+
+.icon:link, .icon:visited {
+    text-decoration: none;
+}
+
+.nav-bar-elem:hover, .nav-bar-elem:active {
+    justify-content:space-around;
+    display: block;
+    font-family: 'IBM Plex Sans', sans-serif;
+    transform: scale(1.5);
+    transition: all ease 500ms;
+    text-decoration: none;
+}
+
+.icon:hover, .icon:active {
+    justify-content:space-around;
+    display: block;
+    font-family: 'Rubik Glitch', cursive;
+    transform: scale(1.2);
+    transition: all ease 500ms;
+    text-decoration: none;
+}
+
+/* #add-send {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    transform: rotate(45deg);  
+}
+
+#add-send span:before, 
+#add-send span:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    z-index: -1;
+    transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+
+  #add-send span:after {
+    transform: rotate(30deg);
+  }
+
+  #add-send span:before {
+    transform: rotate(-30deg);
+  } */
+
+#add-send {
+    display:inline-block;
+    /* padding:0.35em 1.2em; */
+    border:0.1em solid aqua;
+    /* margin:0 0.3em 0.3em 0; */
+    border-radius:50%;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family: 'Chicle', cursive;
+    font-size: 500%;
+    color: whitesmoke;
+    background-color:aqua;
+    text-align:center;
+    transition: all 0.2s;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    width: 200px;
+    height: 200px;
+}
+
+#title {
+    width: 70%;
+    padding: none;
+    margin: none;
+}
+
+#grade {
+    width: 20%;
+}
+
+#add-send:hover {
+    border:0.1em solid aqua;
+    color: aqua;
+    background-color:whitesmoke;
+}
+
+@media all and (max-width:30em){
+    #add-send {
+        display:block;
+        margin:0.4em auto;
+    }
+}
+
+#delete-send {
+    border:0.2em solid black;
+    margin:0 0 0 0;
+    border-radius:0.2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 30%;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color:black;
+    text-align: flex-end;
+    transition: all 0.2s;
+    height: 10%;
+}
+
+#delete-send:hover {
+    border:0.2em solid black;
+    color: black;
+    background-color:whitesmoke;
+    justify-content: flex-end;
+	align-items: flex-end;
+	align-content: flex-end;
+    flex-wrap: nowrap;
+    display: inline-block;
+}
+
+p {
+    margin: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 200%;
+    width: 400;
+    overflow-x: hidden;
+}
+
+.title {
+    display:flex;
+    align-content:space-between;
+    align-items: center;
+    justify-content: space-between;
+    /* font-family:'Chicle', cursive; */
+    font-family: 'Bangers', cursive;
+    font-size: 400%;
+    padding-top: 20px;
+    font-variant: normal;
+}
+
+.location, .area {
+    font-weight: bold;
+}
+
+.notes {
+    padding-top: 10px;
+    font-style: italic;
+    font-size: 100%;
+}
+
+
+
+#sends-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#form {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-end;
+    /* position: absolute; */
+    position: fixed;
+    top: 100px;
+    z-index: 2;
+    right: 40px;
+    bottom: 250px;
+    /* border-style: solid; */
+    box-sizing: border-box;
+    border-width: 10px;
+    border-color: black;
+    padding-top: 602px;
+    padding-bottom: 125px;
+    padding-left: 150px;
+    padding-right: 50px;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    height: 2000px;
+    /* margin-top: 200px; */
+    width: 600px;
+}
+
+input::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+input[type=text],[type=url] {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: black;
+    background-color: whitesmoke;
+    /* font-weight: bold; */
+    opacity: 1;
+    padding-left: 5px;
+    padding-top: 20px;
+    text-transform: uppercase;
+    border-radius: 0.3em;
+    border-width: 0.15em;
+    border-color: black;
+    margin-top: 18px;
+    height: fit-content;
+    font-size: 23px;
+}
+
+input[type=url] {
+    margin-top: 0;
+}
+
+#same-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#submit {
+    border:0.1em solid black;
+    margin:0 0 0 0;
+    border-radius: 0.2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family: 'Bangers', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color:black;
+    text-align: flex-end;
+    transition: all 0.2s;
+    margin-top: 18px;
+    /* height: 60px; */
+}
+
+#submit:hover {
+    border:0.1em solid black;
+    color: black;
+    background-color:whitesmoke;
+    justify-content: flex-end;
+	align-items: flex-end;
+	align-content: flex-end;
+    flex-wrap: nowrap;
+    display: inline-block;
+}
+
+
+footer {
+    /* display: flexbox;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-end;
+	align-content: flex-end;
+    color: black; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    font-family: 'Chicle', cursive;
+    color: black;
+    font-size: 150%;
+    overflow-x: hidden;
+}
+
+.send-box {
+    margin: 3%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    overflow-x:hidden
+}
+
+.content-grid {
+	display: flex;
+	flex-direction: row-reverse;
+	/* flex-wrap: wrap; */
+	justify-content: space-evenly;
+	align-items: center;
+    width: 100vw;
+    overflow-x: hidden;
+    text-transform: uppercase;
+}
+
+iframe {
+    border-radius: 0.4em; 
+    overflow: hidden;
+}
+
+input {
+    padding-top: 10px;
+}
+
+#page-headline {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color:black;
+    text-decoration: none; 
+    padding-top: 200px;
+    padding-left: 2%;
+    font-size: 2000%;
+    animation-name: slidein;
+    /* animation: slideout; */
+    animation-duration: 1s;
+    animation-name: slideout;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+
+@keyframes slideout {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+
+/* .starburst {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    transform: rotate(45deg);  
+}
+
+.starburst span:before, 
+.starburst span:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    z-index: -1;
+    transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+
+  .starburst span:after {
+    transform: rotate(30deg);
+  }
+
+  .starburst span:before {
+    transform: rotate(-30deg);
+  }
+
+/* star button code below */
+
+/* .starburst {
+    font: 4em/1.4 'Lobster', georgia, serif;
+    background: #202020;  
+    width: 2.5em;
+    height: 2.5em;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .starburst,
+  .starburst span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .starburst span {
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    transform: rotate(45deg);
+  }
+  
+  .starburst:before,
+  .starburst:after ,
+  .starburst span:before,
+  .starburst span:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    z-index: -1;
+    transform: rotate(30deg);
+  }
+  
+  .starburst:after {
+    transform: rotate(-30deg);
+  }
+  
+  .starburst span:after {
+    transform: rotate(30deg);
+  }
+  .starburst span:before {
+    transform: rotate(-30deg);
+  }
+  
+  .example {
+    position: absolute;
+    top: 50%;  
+    margin-top: -1.25em;
+    margin-left: -1.25em;
+  }
+  
+  #example-1 {
+    left: 25%;
+  }
+  
+  #example-2 {
+    left: 75%;
+    transform: rotate(-45deg);
+  } */
+  
+
+/* #background {
+    background-color: whitesmoke;
+    width: 100vw;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    z-index: 100;
+} */
+
+/* .header-box {
+    position: fixed;
+    background-color: whitesmoke;
+} */
+
+/* display: none;
+flex-direction: column;
+position: fixed;
+right: 20%;
+bottom: 12.5%;
+border-style: solid;
+border-width: 2px;
+border-color: black;
+padding-top:125px;
+padding-bottom:125px;
+padding-left:150px;
+padding-right:150px;
+background-color: white; */

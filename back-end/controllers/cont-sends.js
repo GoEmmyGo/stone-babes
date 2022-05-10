@@ -1,4 +1,5 @@
 let sends = require('../db/sends-db.json')
+globalId = 1
 // let sends = []
 
 module.exports = {
