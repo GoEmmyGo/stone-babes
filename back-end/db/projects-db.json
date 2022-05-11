@@ -1,4 +1,5 @@
 [
+   
     {
         "videoURL": "https://youtube.com/embed/1xpRDZ4uYsA",
         "title": "Sad Robot",
@@ -6,5 +7,14 @@
         "location": "Red Rock",
         "area": "Willow Springs",
         "notes": "Start hands are literally non-existant, huge move to garbage crimp and basically a dyno to godly rail. No feet, like actually NO FEET, stack pads"
-      }
+    },
+    
+    {
+        "videoURL": "https://youtube.com/embed/rZzTNmgwFZc",
+        "title": "The Pearl",
+        "grade": "V5",
+        "location": "Red Rock",
+        "area": "Kraft",
+        "notes": "Absolutely beaatiful line, lots of tension, the moves are big"
+    }
 ]
