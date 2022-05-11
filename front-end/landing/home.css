@@ -1,7 +1,7 @@
 html {
     max-width: 100%;
     max-height: 100%;
-    background-image: url('../images/moon-sky-boulders.jpg');
+    background-image: url('../images/STONE.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -13,7 +13,7 @@ body {
      margin: 0;
 }
 
-    /* color:  #f76cf7; */
+    
 
 main { 
   /* display: flex;
@@ -29,6 +29,9 @@ main {
   letter-spacing: -7px; */
   font-family: 'Rubik Glitch', cursive;
   color: aqua;
+  /* color: #ff6fff; */
+  /* color:  #f76cf7; */
+  /* color: #ff77ff; */
   display: inline-block;
   font-size: 2500%;
   display: flex;
