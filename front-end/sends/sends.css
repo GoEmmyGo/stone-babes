@@ -162,7 +162,7 @@ button.add-send {
     transition: all 0.2s;
     position: fixed;
     right: 3%;
-    bottom: 3%;
+    bottom: 6%;
     width: 200px;
     height: 200px;
 }
@@ -295,17 +295,17 @@ input[type=text],[type=url] {
     font-family: 'IBM Plex Sans', sans-serif;
     color: black;
     background-color: whitesmoke;
-    /* font-weight: bold; */
+    font-weight: bold;
     opacity: 1;
     padding-left: 5px;
     padding-top: 20px;
     text-transform: uppercase;
     border-radius: 0.3em;
-    border-width: 0.15em;
+    border-width: 0.2em;
     border-color: black;
     margin-top: 18px;
     height: fit-content;
-    font-size: 23px;
+    font-size: 20px;
 }
 
 input[type=url] {

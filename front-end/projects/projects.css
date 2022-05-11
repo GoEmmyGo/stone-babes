@@ -161,8 +161,8 @@ button.add-project {
     text-align:center;
     transition: all 0.2s;
     position: fixed;
-    right: 3%;
-    bottom: 3%;
+    right: 3.5%;
+    bottom: 6%;
     width: 200px;
     height: 200px;
 }
@@ -312,14 +312,14 @@ input[type=url] {
     margin-top: 0;
 }
 
-#notes {
+/* #notes {
     height: 100px;
     inline-size: 390px;
     overflow-wrap: break-word;
     word-wrap: break-word;
     display: flex;
     justify-content: flex-start;
-}
+} */
 
 
 #same-line {
