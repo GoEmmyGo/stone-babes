@@ -286,6 +286,10 @@ p {
     width: 600px;
 }
 
+input:focus {
+    outline: none ! important;
+    }
+
 input::placeholder {
     color: black;
     opacity: 1;
