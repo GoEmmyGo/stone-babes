@@ -1,33 +1,5 @@
 [
     {
-        "videoURL": "https://youtube.com/embed/8YP8d8TD0Vc",
-        "title": "Face Plate",
-        "grade": "V6",
-        "location": "Red Rock",
-        "area": "Willow Springs",
-        "notes": "Stupid giant boulder behind is hard not to dab on, sick crimp jugs"
-    },
-
-    {
-        "videoURL": "https://youtube.com/embed/rZzTNmgwFZc",
-        "title": "The Pearl",
-        "grade": "V5",
-        "location": "Red Rock",
-        "area": "Kraft",
-        "notes": "Absolutely beautiful line, lots of tension, the moves are big"
-    },
-
-    {
-        "videoURL": "https://youtube.com/embed/frpJZs6TfTk",
-        "title": "Angel Dyno",
-        "grade": "V4",
-        "location": "Red Rock",
-        "area": "Kraft",
-        "notes": "Freaking big, def needed to go up left, PITCH BLACK top out"
-    },
-
-
-    {
         "videoURL": "https://youtube.com/embed/WW9Q-amlPkA",
         "title": "Monkey Bar",
         "grade": "V2",
@@ -37,12 +9,39 @@
     },
 
     {
+        "videoURL": "https://youtube.com/embed/fS5cKP6ryro",
+        "title": "Brown",
+        "grade": "V3",
+        "location": "Red Rock",
+        "area": "Willow Springs",
+        "notes": "Perfect warm up"
+    },
+
+    {
+        "videoURL": "https://youtube.com/embed/IkVs35W5fiw",
+        "title": "The Wave",
+        "grade": "V4",
+        "location": "Red Rock",
+        "area": "Kraft",
+        "notes": "Nice end of day climb"
+    },
+
+    {
         "videoURL": "https://youtube.com/embed/frpJZs6TfTk",
         "title": "Angel Dyno",
         "grade": "V4",
         "location": "Red Rock",
         "area": "Kraft",
         "notes": "Freaking big, def needed to go up left, PITCH BLACK top out"
+    },
+
+    {
+        "videoURL": "https://youtube.com/embed/rZzTNmgwFZc",
+        "title": "The Pearl",
+        "grade": "V5",
+        "location": "Red Rock",
+        "area": "Kraft",
+        "notes": "Absolutely beautiful line, lots of tension, the moves are big"
     },
 
     {
