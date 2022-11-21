@@ -11,11 +11,16 @@ const baseURL = `http://localhost:4400`
 
 const homeButton = document.querySelector('a[href="./home.html"]')
 const aboutButton = document.querySelector('a[href="./about/about.html"]')
-const loginButton = document.querySelector('a[href="./home.html"]')
+const loginButton = document.querySelector('#login')
+const createLoginButton = document.querySelector('#create-login')
 const sendsButton = document.querySelector('a[href="./sends/sends.html"]')
 const projectsButton = document.querySelector('a[href="./projects/projects.html"]')
+const loginForm = document.querySelector('#login-bar')\
+const createLoginForm = document.querySelector('#create-login-bar')
+
+
 
 //here I will have my functions for my landing page variables
 
-// homeButton.addEventListener(`mouseover`, )
+
 
